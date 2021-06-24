@@ -1,7 +1,19 @@
-.page-footer {
-  padding: 40px;
-  font-size: 20px;
-  text-align: center;
+.footer {
+  @include font-size(18px, 33px, 1px);
+  background-color: $black;
+  padding: 3em 3em;
+  text-align: left;
+
+  &__name {
+    @include font-size(15px, 33px, 1px);
+    color: $white;
+  }
+
+  &__disc {
+    @include font-size(13px, 33px, 1px);
+    color: $white;
+    font-weight: 100;
+  }
 
   a {
     color: #63696e;

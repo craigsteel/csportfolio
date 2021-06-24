@@ -1,15 +1,19 @@
 import { Container, Row, Col, } from 'react-bootstrap';
 import PageLayout from 'components/PageLayout';
-import AuthorIntro from 'components/AuthorIntro';
-import CardListItem from 'components/CardListItem';
+import MainBanner from 'components/MainBanner';
 import CardItem from 'components/CardItem';
 
 import { getAllBlogs } from 'lib/api';
+import { useGetBlogs } from 'actions';
 
-export default function Home({blogs}) {
-  return (
+
+export default function Home({blogs: initialData}) {
+
+  const { data: blogs, error } = useGetBlogs(initialData);
+
+    return (
     <PageLayout>
-      <AuthorIntro />
+      <MainBanner />
         <hr/>
           { blogs.map(blog =>
             <Container fluid key={blog.slug}>
@@ -18,6 +22,9 @@ export default function Home({blogs}) {
                 title={blog.title}
                 date={blog.date}
                 subtitle={blog.subtitle}
+                projectIntro={blog.projectIntro}
+                projectRole={blog.projectRole}
+                text={blog.text}
                 image={blog.featuredImage}
                 slug={blog.slug}
                 link={{
@@ -36,7 +43,7 @@ export default function Home({blogs}) {
 // Provides props to your page
 // It will create static page
 export async function getStaticProps() {
-  const blogs = await getAllBlogs();
+  const blogs = await getAllBlogs({offset: 0});
   return {
     props: {
       blogs

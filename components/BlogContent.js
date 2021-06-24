@@ -29,7 +29,6 @@ const serializers = {
 
 const BlogContent = ({content}) =>
   <BlockContent
-    imageOptions={{ w: 320, h: 240, fit: 'max'}}
     serializers={serializers}
     blocks={content}
   />

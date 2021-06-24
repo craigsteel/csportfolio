@@ -5,7 +5,7 @@ const BlogNavbar = () => {
   return (
     <Navbar
       className="fj-navbar fj-nav-base px-5"
-      bg="transparent"
+      bg="black"
       expand="lg" >
       <Navbar.Brand className="fj-navbar-brand">
         <Link href="/">

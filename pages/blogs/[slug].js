@@ -7,17 +7,23 @@ import BlogContent from 'components/BlogContent';
 const BlogDetail = ({blog}) => {
   return (
     <PageLayout className="blog-detail-page">
-      <Container fluid>
-        <BlogHeader
-          title={blog.title}
-          subtitle={blog.subtitle}
-          featuredImage={urlFor(blog.featuredImage).url()}
-          date={blog.date}
-        />
+      <Container>
+        <Row>
+          <Col md={{ span: 10, offset: 1}}>
+            <BlogHeader
+              title={blog.title}
+              subtitle={blog.subtitle}
+              featuredImage={urlFor(blog.featuredImage).url()}
+              date={blog.date}
+              projectRole={blog.projectRole}
+              blogMainIntro={blog.blogMainIntro}
+            />
+          </Col>
+        </Row>
       </Container>
       <hr/>
         <Row>
-          <Col md={{ span: 8, offset: 2}}>
+          <Col md={{ span: 10, offset: 1}}>
             <BlogContent
               content={blog.content}
             />

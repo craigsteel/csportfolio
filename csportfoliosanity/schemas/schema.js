@@ -13,23 +13,6 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     {
-      name: 'banner',
-      type: 'document',
-      title: 'Banner',
-      fields: [
-        {
-          name: 'heading',
-          type: 'string',
-          title: 'Heading'
-        },
-        {
-          name: 'intro',
-          type: 'string',
-          title: 'Intro'
-        }
-      ]
-    },
-    {
       name: 'blog',
       type: 'document',
       title: 'Blog',
@@ -54,6 +37,31 @@ export default createSchema({
           name: 'subtitle',
           type: 'string',
           title: 'Subtitle'
+        },
+        {
+          name: 'projectIntro',
+          type: 'string',
+          title: 'Project Introduction'
+        },
+        {
+          name: 'projectRole',
+          title: 'Project Role',
+          type: 'array',
+          of: [
+            {
+              type: 'block'
+            }
+          ]
+        },
+        {
+          name: 'blogMainIntro',
+          title: 'Blog Main Introduction',
+          type: 'array',
+          of: [
+            {
+              type: 'block'
+            }
+          ]
         },
         {
           name: 'featuredImage',
@@ -122,7 +130,7 @@ export default createSchema({
           title: 'Date'
           // validation: Rule => Rule.required()
         }
-      ]
+      ],
     }
   ])
 });

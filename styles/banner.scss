@@ -1,17 +1,26 @@
 .banner {
-  padding: 3em 6em 5em 4.5em;
-  color: #000000;
+  padding: 3em 6em 1em 4.5em;
+  color: $white;
+  background-color: $darkgrey;
   width: 100%;
 
-  h1 {
-    font-size: 4.5em;
+  &__heading {
+    @include font-size(65px, 84px, 1px);
     font-weight: 900;
   }
-}
 
-.admin-intro {
-  .welcome-text {
-    font-size: 18px;
-    width: 60%;
+  &__intro {
+    @include font-size(18px, 33px, 1px);
+    font-weight: 300;
+  }
+
+  &__projects {
+
+    h3 {
+      @include font-size(16px, 33px, 1px);
+      font-weight: 100;
+      text-transform: uppercase;
+      padding: 4em 0 0 4em;
+    }
   }
 }

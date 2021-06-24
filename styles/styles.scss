@@ -1,7 +1,10 @@
-// @import 'index';
+@import 'transition';
+@import 'mixins';
+@import 'variables';
 @import 'base';
 @import 'index';
 @import 'navigation';
+@import 'blogHeader';
 @import 'banner';
 @import 'card';
 @import 'footer';
