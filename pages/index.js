@@ -2,18 +2,20 @@ import { Container, Row, Col, } from 'react-bootstrap';
 import PageLayout from 'components/PageLayout';
 import MainBanner from 'components/MainBanner';
 import CardItem from 'components/CardItem';
+import PreviewAlert from 'components/PreviewAlert';
 
 import { getAllBlogs } from 'lib/api';
 import { useGetBlogs } from 'actions';
 
 
-export default function Home({blogs: initialData}) {
+export default function Home({blogs: initialData, preview}) {
 
   const { data: blogs, error } = useGetBlogs(initialData);
 
     return (
     <PageLayout>
       <MainBanner />
+        { preview && <PreviewAlert /> }
         <hr/>
           { blogs.map(blog =>
             <Container fluid key={blog.slug}>
@@ -42,11 +44,11 @@ export default function Home({blogs: initialData}) {
 // This function is called during the build (build time)
 // Provides props to your page
 // It will create static page
-export async function getStaticProps() {
+export async function getStaticProps({preview = false}) {
   const blogs = await getAllBlogs({offset: 0});
   return {
     props: {
-      blogs
+      blogs, preview
     }
   }
 }

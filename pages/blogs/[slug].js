@@ -3,13 +3,15 @@ import PageLayout from 'components/PageLayout';
 import { getBlogBySlug, getAllBlogs, urlFor } from 'lib/api';
 import BlogHeader from 'components/BlogHeader';
 import BlogContent from 'components/BlogContent';
+import PreviewAlert from 'components/PreviewAlert';
 
-const BlogDetail = ({blog}) => {
+const BlogDetail = ({blog, preview}) => {
   return (
     <PageLayout className="blog-detail-page">
       <Container>
         <Row>
-          <Col md={{ span: 10, offset: 1}}>
+          <Col md={{ span: 10, offset: 1 }}>
+            { preview && <PreviewAlert /> }
             <BlogHeader
               title={blog.title}
               subtitle={blog.subtitle}
@@ -33,10 +35,13 @@ const BlogDetail = ({blog}) => {
   )
 }
 
-export async function getStaticProps({params}) {
+export async function getStaticProps({params, preview = false, previewData}) {
+  console.log('Preview is', preview);
+  console.log('previewData:', previewData);
+
   const blog = await getBlogBySlug(params.slug);
   return {
-    props: {blog}
+    props: {blog, preview}
   }
 }
 
