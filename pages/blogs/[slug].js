@@ -36,19 +36,18 @@ const BlogDetail = ({blog, preview}) => {
 }
 
 export async function getStaticProps({params, preview = false, previewData}) {
-  console.log('Preview is', preview);
-  console.log('previewData:', previewData);
-
-  const blog = await getBlogBySlug(params.slug);
+  const blog = await getBlogBySlug(params.slug, preview);
   return {
-    props: {blog, preview}
+    props: { blog, preview },
+    revalidate: 1
   }
 }
 
 export async function getStaticPaths() {
   const blogs = await getAllBlogs();
+  const paths = blogs?.map(b => ({params: {slug: b.slug}}));
   return {
-    paths: blogs?.map(b => ({params: {slug: b.slug}})),
+    paths,
     fallback: false
   }
 }
