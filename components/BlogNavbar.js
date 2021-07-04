@@ -23,13 +23,21 @@ const BlogNavbar = () => {
             }
           />
           <Nav.Link
-            className="fj-navbar-item fj-navbar-link"
-            href='/'>Projects
-          </Nav.Link>
+            as={() =>
+              <Link href='/about'>
+               <a className="fj-navbar-item fj-navbar-link">About</a>
+              </Link>
+            }
+          />
           <Nav.Link
-            className="fj-navbar-item fj-navbar-link"
-            href='/'>About
-          </Nav.Link>
+            as={() =>
+              <Link href='/projects'>
+               <a className="fj-navbar-item fj-navbar-link">Projects</a>
+              </Link>
+            }
+          />
+
+
         </Nav>
       </Navbar.Collapse>
     </Navbar>

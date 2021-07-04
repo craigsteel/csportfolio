@@ -15,7 +15,7 @@ const CardItem = ({number, title, subtitle, projectIntro, projectRole, image, li
         { link &&
           <Link {...link}>
           <a className="card-button">
-            Read the full story >
+            Read the full story {'>'}
           </a>
         </Link>
         }

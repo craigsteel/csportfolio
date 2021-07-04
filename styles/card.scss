@@ -64,20 +64,15 @@
   .card-button {
     cursor: pointer;
     color: $white;
-    font-family: var(--font-family-primary);
-    font-weight: thin;
-    font-size: 14px;
-    letter-spacing: 0.15rem;
+    @include font-size(14px, 14px, 2px);
+    font-weight: 300;
+    text-transform: uppercase;
     padding-top: 1.5rem !important /* @TODO temp !!!*/;
-    position: relative;
-    -webkit-transition: -webkit-transform 0.2s;
-    transition: -webkit-transform 0.2s;
-    transition: transform 0.2s;
-    transition: transform 0.2s, -webkit-transform 0.2s;
+    @include transition(all $time $ease);
+
 
     &:hover {
-      -webkit-transform: translateY(0.25rem);
-      transform: translateY(0.25rem);
+      color: $orange;
     }
   }
 }
