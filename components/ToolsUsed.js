@@ -7,7 +7,7 @@ const ToolsUsed = () => {
         <h2>Tools I Use</h2>
           <Row>
             <Col md={{ span: 12}}>
-              <h3>Photoshop / Illustrator / INDESIGN / Sketch /  InVision / VISUAL STUDIO CODE / GITHUB</h3>
+              <h3>Photoshop  /  Illustrator  /  INDESIGN  /  Sketch  /  InVision  /  VISUAL STUDIO CODE  /  GITHUB</h3>
             </Col>
           </Row>
         </div>
