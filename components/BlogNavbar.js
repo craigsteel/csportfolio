@@ -29,6 +29,16 @@ const BlogNavbar = () => {
               </Link>
             }
           />
+          <Nav.Link
+            as={() =>
+              <Link href="mailto:craig@craig-steel-design.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >
+               <a className="fj-navbar-item fj-navbar-link">Contact</a>
+              </Link>
+            }
+          />
         </Nav>
       </Navbar.Collapse>
     </Navbar>
