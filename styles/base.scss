@@ -35,6 +35,11 @@ p {
   margin: 0;
 }
 
-// .page-wrapper {
-//   padding-top: 20px;
-// }
+.pl-5, .px-5 {
+  padding-left: 2rem!important;
+
+  @media screen and (min-width: $md) {
+    padding-left: 3rem!important;
+  }
+}
+

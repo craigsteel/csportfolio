@@ -3,24 +3,34 @@
   padding: 20px 0;
   background-color: $black;
 
+  @media screen and (min-width: $md) {
+    padding: 20px 0;
+  }
+
   .fj-navbar {
     &-brand {
-      font-size: 15px;
+      font-size: 13px;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 0;
 
-			a {
-        color: $white;
+      @media screen and (min-width: $md) {
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
 
-        &.active {
-          color: $orange;
-        }
+	  a {
+      color: $white;
 
-        &:hover, &:focus {
-          color: $orange;
-        }
+      &.active {
+        color: $orange;
+      }
+
+      &:hover, &:focus {
+        color: $orange;
       }
     }
+  }
 
     &-item {
       margin-left: 10px;
@@ -30,6 +40,7 @@
     &-link {
       color: $white;
       letter-spacing: 0.8px;
+      line-height: 4em;
       font-size: 15px;
       text-transform: uppercase;
 
@@ -74,3 +85,8 @@
 .bg-transparent.menu-close {
   transition: 1s;
 }
+
+.navbar-toggler {
+  background-color: $white;
+}
+

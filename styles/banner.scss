@@ -1,19 +1,31 @@
 .banner {
   &__main {
-    padding: 3em 9em 1em 9em;
+    padding: 2em 3em;
     color: $white;
     background-color: $black;
     width: 100%;
 
+    @media screen and (min-width: $md) {
+      padding: 3em 9em 1em 9em;
+    }
+
     &--heading {
-      @include font-size(65px, 84px, 1px);
+      @include font-size(44px, 56px, 1px);
       font-weight: 900;
+
+      @media screen and (min-width: $md) {
+        @include font-size(65px, 84px, 1px);
+      }
     }
 
     &--intro {
       @include font-size(18px, 33px, 1px);
       font-weight: 300;
-      padding-right: 9em;
+      padding-right: 0;
+
+      @media screen and (min-width: $md) {
+        padding-right: 9em;
+      }
     }
 
     &--projects {
@@ -21,16 +33,24 @@
         @include font-size(16px, 33px, 1px);
         font-weight: 100;
         text-transform: uppercase;
-        padding: 4em 0 0;
+        padding: 1em 0;
+
+        @media screen and (min-width: $md) {
+          padding: 4em 0 0;
+        }
       }
     }
   }
 
   &__about {
-    padding: 3em 15em 1em 10em;
+    padding: 3em 2em 1em 2em;
     color: $darkgrey;
     background-color: $white;
     width: 100%;
+
+    @media screen and (min-width: $md) {
+      padding: 3em 15em 1em 10em;
+    }
 
     &--heading {
       @include font-size(36px, 48px, 1px);

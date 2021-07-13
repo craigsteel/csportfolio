@@ -9,7 +9,7 @@ const BlogNavbar = () => {
       expand="lg" >
       <Navbar.Brand className="fj-navbar-brand">
         <Link href="/">
-          <a>Craig Parfitt</a>
+          <a>CRAIG PARFITT - 0786 656 2170</a>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -29,8 +29,6 @@ const BlogNavbar = () => {
               </Link>
             }
           />
-
-
         </Nav>
       </Navbar.Collapse>
     </Navbar>

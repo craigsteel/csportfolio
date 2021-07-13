@@ -10,7 +10,7 @@ const PageFooter = () =>
     </div>
     <a href="/">home</a>{' | '}
     <a href="https://github.com/craigsteel/csportfolio">github</a>{' | '}
-    <a href="https://twitter.com/home">Twitter</a>
+    <a href="https://twitter.com/home">twitter</a>
   </footer>
 
   export default PageFooter;

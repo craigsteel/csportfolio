@@ -1,8 +1,16 @@
 .blog-header {
-  padding: 3em 0 0;
+  padding: 3em 1em 0;
 
   p {
     @include font-size(16px, 30px, 1px);
+  }
+
+  @media screen and (min-width: $md) {
+    padding: 3em 0 0;
+
+    p {
+       @include font-size(16px, 30px, 1px);
+    }
   }
 
   &__title {

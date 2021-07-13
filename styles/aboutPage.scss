@@ -38,7 +38,11 @@
 }
 
 .tools {
-  margin: 2em 0;
+  margin: 2em 2em;
+
+  @media screen and (min-width: $md) {
+    margin: 2em 0;
+  }
 
   h2 {
     @include font-size(26px, 33px, 1px);
@@ -54,8 +58,12 @@
 }
 
 .workflow {
-  margin: 2em 0;
+  margin: 2em 2em;
   position: relative;
+
+  @media screen and (min-width: $md) {
+    margin: 2em 0;
+  }
 
   &__bg-image {
     opacity: 4%;
