@@ -6,11 +6,11 @@ const PageFooter = () =>
       CRAIG PARFITT - 0786 656 2170
     </div>
     <div className="footer__disc">
-      APPLICATION designed & built using - Pen & Paper - Photoshop - NODe.js - NEXT.js & React.js
+      APPLICATION designed & built using - Pen & Paper - SKETCH - NODE.js - NEXT.js - SANITY - vercel
     </div>
-    <a href="#">courses</a>{' | '}
-    <a href="#">github</a>{' | '}
-    <a href="#">facebook</a>
+    <a href="/">home</a>{' | '}
+    <a href="https://github.com/craigsteel/csportfolio">github</a>{' | '}
+    <a href="https://twitter.com/home">Twitter</a>
   </footer>
 
   export default PageFooter;

@@ -29,13 +29,6 @@ const BlogNavbar = () => {
               </Link>
             }
           />
-          <Nav.Link
-            as={() =>
-              <Link href='/projects'>
-               <a className="fj-navbar-item fj-navbar-link">Projects</a>
-              </Link>
-            }
-          />
 
 
         </Nav>
