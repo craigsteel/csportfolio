@@ -71,6 +71,7 @@
   }
 
   .card-project-text {
+    padding-top: 1em;
     @include font-size(14px, 25px, 1px);
     font-weight: 300;
   }
