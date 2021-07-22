@@ -1,6 +1,6 @@
 import { Col, Media, Image, } from 'react-bootstrap';
 import  { library } from '@fortawesome/fontawesome-svg-core';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
@@ -15,7 +15,7 @@ const MainBanner = () => {
         With a background of over 20 years in branding, corporate and web design, I bring a wealth of experience and knowledge to each project that can help clients to identify and solve their communication problems, creating a better and more enjoyable online user experience.
       </h2>
       <div className="banner__main--projects">
-        <h3>Featured Projects  <FontAwesomeIcon icon={faAngleDown}/></h3>
+        <h3>Featured Projects  <FontAwesomeIcon icon={faChevronDown}/></h3>
       </div>
     </div>
   )
