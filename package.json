@@ -17,6 +17,7 @@
     "@sanity/image-url": "^0.140.22",
     "@wdio/cli": "^7.5.2",
     "bootstrap": "^4.5.0",
+    "framer-motion": "^4.1.17",
     "highlight.js": "10.03",
     "next": "^10.2.3",
     "next-pwa": "^5.2.15",

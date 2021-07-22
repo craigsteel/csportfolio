@@ -6,6 +6,7 @@ import PreviewAlert from 'components/PreviewAlert';
 
 import { getAllBlogs } from 'lib/api';
 import { useGetBlogs } from 'actions';
+import { motion } from "framer-motion";
 
 
 export default function Home({blogs: initialData, preview}) {
@@ -13,32 +14,34 @@ export default function Home({blogs: initialData, preview}) {
   const { data: blogs, error } = useGetBlogs(initialData);
 
     return (
-    <PageLayout>
-      <MainBanner />
-        { preview && <PreviewAlert /> }
-        <hr/>
-          { blogs.map(blog =>
-            <Container fluid key={blog.slug}>
-              <CardItem
-                number={blog.number}
-                title={blog.title}
-                date={blog.date}
-                subtitle={blog.subtitle}
-                projectIntro={blog.projectIntro}
-                projectRole={blog.projectRole}
-                text={blog.text}
-                image={blog.featuredImage}
-                slug={blog.slug}
-                link={{
-                  href: '/blogs/[slug]',
-                  as:`/blogs/${blog.slug}`
-                }}
-              />
-            </Container>
-            )
-          }
-    </PageLayout>
-  )
+      <motion.div exit={{ opacity: 0 }}>
+        <PageLayout>
+          <MainBanner />
+            { preview && <PreviewAlert /> }
+            <hr/>
+              { blogs.map(blog =>
+                <Container fluid key={blog.slug}>
+                  <CardItem
+                    number={blog.number}
+                    title={blog.title}
+                    date={blog.date}
+                    subtitle={blog.subtitle}
+                    projectIntro={blog.projectIntro}
+                    projectRole={blog.projectRole}
+                    text={blog.text}
+                    image={blog.featuredImage}
+                    slug={blog.slug}
+                    link={{
+                      href: '/blogs/[slug]',
+                      as:`/blogs/${blog.slug}`
+                    }}
+                  />
+                </Container>
+                )
+              }
+        </PageLayout>
+      </motion.div>
+    )
 }
 
 // This function is called during the build (build time)
