@@ -1,4 +1,5 @@
 import { Container, Col, Row } from 'react-bootstrap';
+import craigParfittCV from 'public/craigParfittCV.pdf';
 
 
 const JourneyCard = ({link}) => {
@@ -48,8 +49,7 @@ const JourneyCard = ({link}) => {
 					</Col>
 				</Row>
 				<div className="journey__pdf-download">
-					<a href={`${process.env.PUBLIC_URL}/Craig-Parfitt-CV.pdf`} 
-          target='_blank' download>Download My CV </a>
+					<a href={craigParfittCV.pdf} target='_blank' download>Download My CV </a>
 				</div>
 			</div>
 		</Container>
