@@ -1,8 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Craig Parfitt - Portfolio Headless CMS
+
+This is the front end.
+Built with [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+The backend is located [GitHub](https://github.com/craigsteel/csportfoliosanity.git).
+Built With [SanityStudio](https://www.sanity.io/).
+A content management system.
 
 ## Getting Started
 
-1. create `.env.local` file in root folder with values of:
+create `.env.local` file in root folder with values of:
 
 ```javascript
 SANITY_DATASET_NAME=YOUR_DATASET_NAME // from sanity dashboard
@@ -11,7 +18,7 @@ SANITY_PREVIEW_SECRET=YOUR_PREVIEW_SECRET // unique string
 SANITY_API_TOKEN=YOUR_API_TOKEN // from sanity dashboard
 ```
 
-2. Run the development server:
+Run the development server:
 
 ```bash
 npm run dev
