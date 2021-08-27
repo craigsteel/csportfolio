@@ -49,7 +49,7 @@ const JourneyCard = ({link}) => {
 					</Col>
 				</Row>
 				<div className="journey__pdf-download">
-					<a href={craigParfittCV.pdf} target='_blank' download>Download My CV </a>
+					<a href="/craigParfittCV.pdf" target='_blank' download>Download My CV </a>
 				</div>
 			</div>
 		</Container>
