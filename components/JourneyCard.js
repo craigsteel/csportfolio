@@ -1,5 +1,4 @@
 import { Container, Col, Row } from 'react-bootstrap';
-import craigParfittCV from 'public/craigParfittCV.pdf';
 
 
 const JourneyCard = ({link}) => {
