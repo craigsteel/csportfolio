@@ -1,4 +1,5 @@
-# Craig Parfitt - Portfolio Headless CMS
+# [Craig Parfitt - Portfolio Headless CMS](https://www.craigparfitt.com/).
+<https://www.craigparfitt.com>
 
 This is the front end.
 Built with [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
@@ -6,6 +7,8 @@ Built with [Next.js](https://nextjs.org/) project bootstrapped with [`create-nex
 The backend is located [GitHub](https://github.com/craigsteel/csportfoliosanity.git).
 Built With [SanityStudio](https://www.sanity.io/).
 A content management system.
+
+The front and backend are both deployed and hosted with [vercel.com](https://vercel.com/).
 
 ## Getting Started
 
