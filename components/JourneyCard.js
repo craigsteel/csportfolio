@@ -31,6 +31,9 @@ const JourneyCard = ({link}) => {
 						<li>Creative output</li>
 						<li>Branding</li>
 						<li>Annual Reports</li>
+						<li>Photographic art direction</li>
+						<li>Commissioning Photographers</li>
+						<li>Commissioning illustrators</li>
 						<li>Presenting to clients</li>
 						<li>Creative team management</li>
 						<li>Project management</li>
@@ -48,7 +51,9 @@ const JourneyCard = ({link}) => {
 					</Col>
 				</Row>
 				<div className="journey__pdf-download">
-					<a href="/craigParfittCV.pdf" target='_blank' download>Download My CV </a>
+					<a href="/craigParfittCV.pdf" target="_blank" download>
+						Download My CV{" "}
+					</a>
 				</div>
 			</div>
 		</Container>
