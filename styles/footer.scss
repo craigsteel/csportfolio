@@ -7,6 +7,11 @@
   &__name {
     @include font-size(15px, 33px, 1px);
     color: $white;
+
+    &--link {
+      @include font-size(13px, 33px, 1px);
+      color: $white;
+    }
   }
 
   &__disc {
@@ -16,7 +21,15 @@
     text-transform: uppercase;
   }
 
-  a {
-    color: #63696e;
-  }
+	  a {
+      color: $white;
+
+      &.active {
+        color: $orange;
+      }
+
+      &:hover, &:focus {
+        color: $orange;
+      }
+    }
 }
