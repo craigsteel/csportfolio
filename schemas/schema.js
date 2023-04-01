@@ -15,7 +15,7 @@ export default createSchema({
     {
       name: 'projects',
       type: 'document',
-      title: 'projects',
+      title: 'Projects',
       fields: [
         {
           name: 'number',
