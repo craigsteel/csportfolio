@@ -1,0 +1,93 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: $black;
+  padding: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  border: 0;
+
+  @media screen and (min-width: $md) {
+    padding: 0 3em;
+  }
+}
+
+.card-img {
+  margin-left: auto;
+  border: 0;
+  border-radius: 0;
+  border-style: none;
+  // padding-top: 2em;
+  width: 100%;
+
+  @media screen and (min-width: $md) {
+    width: 55%;
+  }
+}
+
+.card-body {
+  padding: 0 2em;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  flex-direction: column;
+  width: 100%;
+
+  @media screen and (min-width: $md) {
+    padding: 4em 2em 0;
+    position: absolute;
+    width: 45%;
+  }
+
+  .card-main-number {
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  .card-title {
+    font-weight: 300;
+    margin-bottom: 1em;
+  }
+
+  .card-date {
+    font-size: 13px;
+  }
+
+  .card-main-title {
+    font-size: 30px;
+  }
+
+  .card-project-role {
+    @include font-size(16px, 27px, 1px);
+    font-weight: 300;
+  }
+
+  .card-main-text {
+    text-transform: uppercase;
+    padding: 1em 0;
+  }
+
+  .card-project-text {
+    padding-top: 1em;
+    @include font-size(14px, 25px, 1px);
+    font-weight: 300;
+  }
+
+  .card-button {
+    cursor: pointer;
+    color: $white;
+    @include font-size(14px, 14px, 2px);
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 1.5rem !important /* @TODO temp !!!*/;
+    @include transition(all $time $ease);
+
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}

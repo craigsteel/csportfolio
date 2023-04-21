@@ -1,0 +1,63 @@
+
+$time: 320ms;
+$time_slow: 700ms;
+
+$swing: cubic-bezier(0.55, 0, 0.1, 1);
+$swift: cubic-bezier(0.4, 0, 0.2, 1);
+$ease: ease;
+
+$transition-default: all $time $ease;
+
+@mixin font-size($size, $line: $size * 1.5, $space: 0) {
+  font-size: $size;
+  line-height: $line;
+  letter-spacing: $space;
+}
+
+@mixin button {
+   a {
+    color: $darkgrey;
+    border: 1px solid $darkgrey;
+    padding: 15px 20px;
+    @include transition(all $time $ease);
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: $orange;
+    border: none;
+    background-color: $black;
+  }
+}
+
+
+@function drop-shadow($size, $color, $length) {
+		$value: ();
+
+			@for $i from 1 through $length {
+			$shadow: 0 ($size * $i) ($size * $i) #{-$size} $color;
+			$value: append($value, $shadow, comma);
+		}
+
+	@return $value;
+}
+
+@mixin drop-shadow($size, $color, $length) {
+	$value: ();
+	@for $i from 1 through $length {
+		$shadow: 0 ($size * $i) ($size * $i) #{-$size} $color;
+		$value: append($value, $shadow, comma);
+	}
+	box-shadow: $value;
+}
+
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}

@@ -1,0 +1,35 @@
+.footer {
+  @include font-size(18px, 33px, 1px);
+  background-color: $black;
+  padding: 3em 3em;
+  text-align: left;
+
+  &__name {
+    @include font-size(15px, 33px, 1px);
+    color: $white;
+
+    &--link {
+      @include font-size(13px, 33px, 1px);
+      color: $white;
+    }
+  }
+
+  &__disc {
+    @include font-size(13px, 33px, 1px);
+    color: $white;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+	  a {
+      color: $white;
+
+      &.active {
+        color: $orange;
+      }
+
+      &:hover, &:focus {
+        color: $orange;
+      }
+    }
+}

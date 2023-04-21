@@ -1,0 +1,92 @@
+.fj-navbar.fj-nav-base {
+  width: 100%;
+  padding: 20px 0;
+  background-color: $black;
+
+  @media screen and (min-width: $md) {
+    padding: 20px 0;
+  }
+
+  .fj-navbar {
+    &-brand {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+
+      @media screen and (min-width: $md) {
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+	  a {
+      color: $white;
+
+      &.active {
+        color: $orange;
+      }
+
+      &:hover, &:focus {
+        color: $orange;
+      }
+    }
+  }
+
+    &-item {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    &-link {
+      color: $white;
+      letter-spacing: 0.8px;
+      line-height: 4em;
+      font-size: 15px;
+      text-transform: uppercase;
+
+      &.active {
+        color: $orange;
+      }
+
+      &:hover, &:focus {
+        color: $orange;
+      }
+    }
+  }
+
+  .fj-dropdown-menu {
+
+    .fj-dropdown-item {
+      color: $darkgrey;
+
+      &.active {
+        color: $orange;
+      }
+    }
+
+    .fj-dropdown-toggle {
+      color: $white;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.fj-navbar.fj-nav-base.fj-nav-default {
+  padding: 30px;
+  background-color: $black !important;
+}
+
+
+.bg-transparent.menu-open {
+  background-color: $darkgrey !important;
+}
+
+.bg-transparent.menu-close {
+  transition: 1s;
+}
+
+.navbar-toggler {
+  background-color: $white;
+}
+

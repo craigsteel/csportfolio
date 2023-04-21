@@ -1,0 +1,21 @@
+button.backButton {
+  display: flex;
+  margin: 3em auto;
+  align-items: center;
+  width: 10%;
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    color: $darkgrey;
+    border: 1px solid $darkgrey;
+    padding: 15px 20px;
+      @include transition(all $time $ease);
+    }
+
+    a:hover {
+      color: $orange;
+      border: none;
+      background-color: $black;
+    }
+}
