@@ -4,11 +4,7 @@ import { getBlogBySlug, getAllBlogs, urlFor } from 'lib/api';
 import BlogHeader from 'components/BlogHeader';
 import BlogContent from 'components/BlogContent';
 import PreviewAlert from 'components/PreviewAlert';
-<<<<<<< HEAD
-import Button from "components/Button";
 import Link from "next/link";
-=======
->>>>>>> f8c36bfed569c0bfc00591b8e2d1e54aa385fbe8
 
 const BlogDetail = ({blog, preview}) => {
   return (
@@ -16,11 +12,7 @@ const BlogDetail = ({blog, preview}) => {
       <Container>
         <Row>
           <Col md={{ span: 10, offset: 1 }}>
-<<<<<<< HEAD
             {preview && <PreviewAlert />}
-=======
-            { preview && <PreviewAlert /> }
->>>>>>> f8c36bfed569c0bfc00591b8e2d1e54aa385fbe8
             <BlogHeader
               title={blog.title}
               subtitle={blog.subtitle}
@@ -32,7 +24,6 @@ const BlogDetail = ({blog, preview}) => {
           </Col>
         </Row>
       </Container>
-<<<<<<< HEAD
       <hr />
       <Row>
         <Col md={{ span: 10, offset: 1 }}>
@@ -42,18 +33,6 @@ const BlogDetail = ({blog, preview}) => {
       </Row>
     </PageLayout>
   );
-=======
-      <hr/>
-        <Row>
-          <Col md={{ span: 10, offset: 1}}>
-            <BlogContent
-              content={blog.content}
-            />
-          </Col>
-        </Row>
-    </PageLayout>
-  )
->>>>>>> f8c36bfed569c0bfc00591b8e2d1e54aa385fbe8
 }
 
 export async function getStaticProps({params, preview = false, previewData}) {

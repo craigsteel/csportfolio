@@ -14,18 +14,10 @@ const PageFooter = () =>
     <a href="/">home</a>{' | '}
     <a href="https://github.com/craigsteel/csportfolio">github</a>{' | '}
     <a href="https://twitter.com/home">twitter</a>{' | '}
-<<<<<<< HEAD
     <a href="mailto:craig@craigsteel-design.com"
-=======
-    <a href="mailto:craig@craig-steel-design.com"
->>>>>>> f8c36bfed569c0bfc00591b8e2d1e54aa385fbe8
       target="_blank"
       rel="noopener noreferrer">contact
     </a>
   </footer>
 
-<<<<<<< HEAD
   export default PageFooter;
-=======
-  export default PageFooter;
->>>>>>> f8c36bfed569c0bfc00591b8e2d1e54aa385fbe8
