@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-import { Col, Media, Image, } from 'react-bootstrap';
->>>>>>> f8c36bfed569c0bfc00591b8e2d1e54aa385fbe8
 
 const AboutBanner = () =>
   <div className="banner banner__about">
