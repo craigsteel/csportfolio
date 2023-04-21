@@ -82,7 +82,7 @@
     @include font-size(14px, 14px, 2px);
     font-weight: 300;
     text-transform: uppercase;
-    padding-top: 1.5rem !important /* @TODO temp !!!*/;
+    padding-top: 1.5rem !important;
     @include transition(all $time $ease);
 
 
