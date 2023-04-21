@@ -31,7 +31,11 @@ const BlogNavbar = () => {
           />
           <Nav.Link
             as={() =>
+<<<<<<< HEAD
               <Link href="mailto:craig@craigsteel-design.com"
+=======
+              <Link href="mailto:craig@craig-steel-design.com"
+>>>>>>> f8c36bfed569c0bfc00591b8e2d1e54aa385fbe8
               target="_blank"
               rel="noopener noreferrer"
               >
