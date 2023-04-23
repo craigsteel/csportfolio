@@ -7,5 +7,9 @@
         "noreferrer",
         "PARFITT"
     ],
-    "auto-close-tag.fullMode": false
+    "auto-close-tag.fullMode": false,
+    "liveServer.settings.NoBrowser": true,
+    "vscode-edge-devtools.webhint": false,
+    "perforce.debugModeActive": true,
+    "perforce.specEditor.showIndentWarning": false
 }

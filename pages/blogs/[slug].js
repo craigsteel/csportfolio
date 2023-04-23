@@ -4,6 +4,7 @@ import { getBlogBySlug, getAllBlogs, urlFor } from 'lib/api';
 import BlogHeader from 'components/BlogHeader';
 import BlogContent from 'components/BlogContent';
 import PreviewAlert from 'components/PreviewAlert';
+import Button from "components/Button";
 import Link from "next/link";
 
 const BlogDetail = ({blog, preview}) => {

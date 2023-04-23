@@ -8,7 +8,6 @@ import { getAllBlogs } from 'lib/api';
 import { useGetBlogs } from 'actions';
 import { motion } from "framer-motion";
 
-
 export default function Home({blogs: initialData, preview}) {
 
   const { data: blogs, error } = useGetBlogs(initialData);
