@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "mjcrouch.perforce"
+        "mjcrouch.perforce",
+        "ms-vscode.powershell"
     ]
 }
