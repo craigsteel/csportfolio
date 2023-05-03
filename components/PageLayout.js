@@ -19,23 +19,28 @@ export default function PageLayout({children, className}) {
           scale: 1,
         }}
         transition={{
-          duration: .5
+          duration: 0.5,
         }}
       >
-      <Head>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+        <Head>
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+            rel="stylesheet"
+          />
+          <link rel="icon" href="/favicon.ico" />
+          <meta
+            name="google-site-verification"
+            content="rOQryTT28MDXzXvLfrJjWTa3GX16RkyJqPhFJEkVis0"
+          />
+        </Head>
 
-      <BlogNavbar />
+        <BlogNavbar />
 
-        <Row className={`page-wrapper ${className}`}>
-          {children}
-        </Row>
+        <Row className={`page-wrapper ${className}`}>{children}</Row>
 
         <PageFooter />
       </motion.div>
     </>
-  )
+  );
 }

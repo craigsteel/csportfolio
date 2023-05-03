@@ -1,4 +1,5 @@
-# [Craig Parfitt - Portfolio Headless CMS](https://www.craigparfitt.com/).
+# [Craig Parfitt - Portfolio Headless CMS](https://www.craigparfitt.com/)
+
 <https://www.craigparfitt.com>
 
 This is the front end.
