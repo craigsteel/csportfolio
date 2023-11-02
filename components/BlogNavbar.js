@@ -1,3 +1,4 @@
+'use client'
 import { Navbar, Nav } from 'react-bootstrap';
 import Link from 'next/link';
 
@@ -31,7 +32,7 @@ const BlogNavbar = () => {
           />
           <Nav.Link
             as={() =>
-              <Link href="mailto:craig@craigsteel-design.com"
+              <Link href="mailto:info@craigparfitt.com"
               target="_blank"
               rel="noopener noreferrer"
               >

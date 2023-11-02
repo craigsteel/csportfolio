@@ -5,14 +5,16 @@ const ToolsUsed = () => {
     <Container>
       <div className="tools">
         <h2>Tools I Use</h2>
-          <Row>
-            <Col md={{ span: 12}}>
-              <h3>Photoshop  /  Illustrator  /  INDESIGN  /  XD  /  Sketch  /  InVision  /  VISUAL STUDIO CODE  /  GITHUB</h3>
-            </Col>
-          </Row>
-        </div>
+        <Row>
+          <Col md={{ span: 12 }}>
+            <h3>
+              Photoshop / Illustrator / INDESIGN / XD / Sketch / InVision / VSC / GITHUB / Asana
+            </h3>
+          </Col>
+        </Row>
+      </div>
     </Container>
-  )
+  );
 }
 
 export default ToolsUsed
