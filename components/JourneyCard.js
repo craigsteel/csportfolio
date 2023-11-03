@@ -28,8 +28,8 @@ const JourneyCard = ({ link }) => {
             <p>UI UX SENIOR DESIGNER - 2010 - 2021</p>
             <li>Creative Output</li>
             <li>Branding</li>
-            <li>Design / Build of Website Applications</li>
-            <li>Ecommerce Websites / Wordpress Themes</li>
+            <li>Design / Build Applications</li>
+            <li>Ecommerce / Wordpress Themes</li>
             <li>UI/UX Design</li>
             <li>Photographic art direction</li>
             <li>Commissioning Photographers</li>
