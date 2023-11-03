@@ -1,7 +1,9 @@
 import { Container, Col, Row } from 'react-bootstrap';
 
 
-const JourneyCard = ({link}) => {
+const JourneyCard = ({ link }) => {
+
+
   return (
     <Container>
       <div className="journey">
